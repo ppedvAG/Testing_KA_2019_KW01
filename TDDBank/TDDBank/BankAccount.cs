@@ -10,14 +10,22 @@ namespace TDDBank
     {
         public decimal Balance { get; set; }
 
-        public void Deposit(decimal v)
+        public void Deposit(decimal value)
         {
-            throw new NotImplementedException();
+            if (value <= 0)
+                throw new ArgumentException();
+            Balance += value;
         }
 
-        public void Withdraw(decimal v)
+        public void Withdraw(decimal value)
         {
-            throw new NotImplementedException();
+            if (value <= 0)
+                throw new ArgumentException();
+            if (value > Balance)
+                throw new InvalidOperationException();
+
+            Balance -= value;
+
         }
     }
 }
