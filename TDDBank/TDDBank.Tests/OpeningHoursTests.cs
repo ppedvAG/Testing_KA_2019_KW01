@@ -1,6 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.QualityTools.Testing.Fakes;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +27,24 @@ namespace TDDBank.Tests
             Assert.AreEqual(result, oh.IsOpen(dt));
         }
 
+
+        [TestMethod]
+        public void OpeningHours_IsNowOpen()
+        {
+            using (ShimsContext.Create())
+            {
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2019, 1, 1, 20, 0, 0);
+                System.IO.Fakes.ShimFile.ExistsString = x => true;
+
+                Assert.IsTrue(File.Exists("7:\\ewlnflkew.txt"));
+
+                var oh = new OpeningHours();
+
+                var result = oh.IsNowOpen();
+
+                Assert.IsFalse(result);
+            }
+        }
 
     }
 }

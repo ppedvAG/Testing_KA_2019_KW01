@@ -8,7 +8,21 @@ namespace TDDBank
 {
     public class BankAccount
     {
-        public decimal Balance { get; set; }
+        public decimal Balance { get; private set; }
+
+        public Wealth Wealth
+        {
+            get
+            {
+                if (Balance == 0)
+                    return Wealth.Zero;
+                else if (Balance > 1000000)
+                    return Wealth.Rich;
+                else if (Balance > 1000)
+                    return Wealth.OK;
+                else return Wealth.Poor;
+            }
+        }
 
         public void Deposit(decimal value)
         {
@@ -27,5 +41,13 @@ namespace TDDBank
             Balance -= value;
 
         }
+    }
+
+    public enum Wealth
+    {
+        Zero,
+        Poor,
+        OK,
+        Rich
     }
 }

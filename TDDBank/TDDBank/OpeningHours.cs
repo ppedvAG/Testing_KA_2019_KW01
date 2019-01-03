@@ -50,6 +50,10 @@ namespace TDDBank
         }
 
 
+        public bool IsNowOpen()
+        {
+            return IsOpen(DateTime.Now);
+        }
 
         public bool IsOpen(DateTime time)
         {
