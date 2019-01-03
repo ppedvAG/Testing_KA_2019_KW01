@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="Calculator.Tests.CalcTests.Calc_Sum_throws_OverflowException" /><Add Test="Calculator.Tests.CalcTests.Calc_Sum_MAX_and_1_throws_OverflowException" /></Playlist>
