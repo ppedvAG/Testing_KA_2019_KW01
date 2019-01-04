@@ -7,10 +7,21 @@ namespace ppedv.Pillenpresse.Logic
     public class Core
     {
         public IDevice ActiveDevice { get; set; }
+        public IRepository Repository { get; set; }
 
-        public Core(IDevice device)
+        public Core(IDevice device, IRepository repo)
         {
             ActiveDevice = device;
+            Repository = repo;
+        }
+
+
+        public void MakeAllPills()
+        {
+            foreach (var item in Repository.GetAll<Symptom>())
+            {
+                MakePillsForSymptom(item);
+            }
         }
 
 
@@ -19,7 +30,7 @@ namespace ppedv.Pillenpresse.Logic
             if (sym == null)
                 throw new ArgumentNullException();
 
-            ActiveDevice.Machzeug(sym.Wirkstoffe);  
+            ActiveDevice.Machzeug(sym.Wirkstoffe);
         }
     }
 }
