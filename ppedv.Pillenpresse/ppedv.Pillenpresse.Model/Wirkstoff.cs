@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ppedv.Pillenpresse.Model
 {
@@ -7,5 +8,6 @@ namespace ppedv.Pillenpresse.Model
         public string Name { get; set; }
         public double MengeProEinheit { get; set; }
         public virtual HashSet<Symptom> Symptome { get; set; } = new HashSet<Symptom>();
+        public DateTime Verfallsdatum { get; set; }
     }
 }
