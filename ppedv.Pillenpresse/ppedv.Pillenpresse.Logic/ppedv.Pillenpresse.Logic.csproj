@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ppedv.Pillenpresse.Data.EF\ppedv.Pillenpresse.Data.EF.csproj" />
+    <ProjectReference Include="..\ppedv.Pillenpresse.Device.Binford.Tests\ppedv.Pillenpresse.Device.Binford.Tests.csproj" />
+    <ProjectReference Include="..\ppedv.Pillenpresse.Device.Binford\ppedv.Pillenpresse.Device.Binford.csproj" />
+    <ProjectReference Include="..\ppedv.Pillenpresse.Model\ppedv.Pillenpresse.Model.csproj" />
+  </ItemGroup>
+
+</Project>
