@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Binford.PillenPunisher5000\Binford.PillenPunisher5000.csproj" />
+    <ProjectReference Include="..\ppedv.Pillenpresse.Model\ppedv.Pillenpresse.Model.csproj" />
+  </ItemGroup>
+
+</Project>

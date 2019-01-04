@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Pillenpresse.Data.EF"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Pillenpresse.Data.EF.Tests", "ppedv.Pillenpresse.Data.EF.Tests\ppedv.Pillenpresse.Data.EF.Tests.csproj", "{BA41DE5E-ACB7-4627-B54D-8A031512632C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binford.PillenPunisher5000", "Binford.PillenPunisher5000\Binford.PillenPunisher5000.csproj", "{96870033-DFB0-45CD-869A-9D771FFBC8E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.PillPress", "ACME.PillPress\ACME.PillPress.csproj", "{DE34BFC7-004B-4D2F-810E-6D41646F1185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Pillenpresse.Device.Binford", "ppedv.Pillenpresse.Device.Binford\ppedv.Pillenpresse.Device.Binford.csproj", "{E7500936-7995-4EC3-B0B8-A65639FAAED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Pillenpresse.Device.Binford.Tests", "ppedv.Pillenpresse.Device.Binford.Tests\ppedv.Pillenpresse.Device.Binford.Tests.csproj", "{F456E3C6-935A-42E5-B59A-71997AD3D21D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +35,22 @@ Global
 		{BA41DE5E-ACB7-4627-B54D-8A031512632C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA41DE5E-ACB7-4627-B54D-8A031512632C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA41DE5E-ACB7-4627-B54D-8A031512632C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96870033-DFB0-45CD-869A-9D771FFBC8E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96870033-DFB0-45CD-869A-9D771FFBC8E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96870033-DFB0-45CD-869A-9D771FFBC8E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96870033-DFB0-45CD-869A-9D771FFBC8E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE34BFC7-004B-4D2F-810E-6D41646F1185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE34BFC7-004B-4D2F-810E-6D41646F1185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE34BFC7-004B-4D2F-810E-6D41646F1185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE34BFC7-004B-4D2F-810E-6D41646F1185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7500936-7995-4EC3-B0B8-A65639FAAED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7500936-7995-4EC3-B0B8-A65639FAAED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7500936-7995-4EC3-B0B8-A65639FAAED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7500936-7995-4EC3-B0B8-A65639FAAED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F456E3C6-935A-42E5-B59A-71997AD3D21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F456E3C6-935A-42E5-B59A-71997AD3D21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F456E3C6-935A-42E5-B59A-71997AD3D21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F456E3C6-935A-42E5-B59A-71997AD3D21D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
